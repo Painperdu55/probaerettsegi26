@@ -1,0 +1,2 @@
+# probaerettsegi26
+Adatgyűjtés
