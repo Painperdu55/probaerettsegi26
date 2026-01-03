@@ -41,21 +41,16 @@
       display:flex; align-items:center; justify-content:space-between;
       gap:12px;
     }
-    .brand{
-      display:flex; align-items:center; gap:12px;
-      min-width: 240px;
-    }
+    .brand{ display:flex; align-items:center; gap:12px; min-width: 240px; }
     .logo{
       width:44px; height:44px; border-radius:14px;
       background: linear-gradient(135deg, var(--blue), var(--blue2));
       display:grid; place-items:center;
       box-shadow: 0 10px 20px rgba(30,90,168,.25);
-      position:relative;
-      overflow:hidden;
+      position:relative; overflow:hidden;
     }
     .logo:after{
-      content:"";
-      position:absolute; inset:-18px;
+      content:""; position:absolute; inset:-18px;
       background: radial-gradient(circle at 30% 30%, rgba(246,196,0,.55), transparent 55%);
       transform: rotate(18deg);
     }
@@ -64,46 +59,22 @@
     .title h1{ font-size: 16px; margin:0; letter-spacing:.2px; }
     .title p{ margin:2px 0 0; font-size: 12px; color: var(--gray); }
 
-    .actions{
-      display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end;
-    }
+    .actions{ display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
     button{
-      border:0;
-      border-radius: 14px;
-      padding: 10px 12px;
-      font-weight: 650;
-      cursor:pointer;
+      border:0; border-radius: 14px; padding: 10px 12px;
+      font-weight: 650; cursor:pointer;
       transition: transform .06s ease, box-shadow .2s ease, background .2s ease;
       display:inline-flex; align-items:center; gap:8px;
       box-shadow: 0 8px 18px rgba(15,23,42,.08);
     }
     button:active{ transform: translateY(1px); }
-    .btn-primary{
-      background: linear-gradient(135deg, var(--blue), var(--blue2));
-      color: var(--white);
-    }
-    .btn-secondary{
-      background: var(--white);
-      color: #0f172a;
-      border: 1px solid rgba(100,116,139,.22);
-    }
-    .btn-danger{ background: #ef4444; color: var(--white); }
-    .btn-soft{
-      background: rgba(246,196,0,.18);
-      color:#0f172a;
-      border: 1px solid rgba(246,196,0,.35);
-    }
+    .btn-primary{ background: linear-gradient(135deg, var(--blue), var(--blue2)); color: var(--white); }
+    .btn-secondary{ background: var(--white); color:#0f172a; border:1px solid rgba(100,116,139,.22); }
+    .btn-danger{ background:#ef4444; color:var(--white); }
+    .btn-soft{ background: rgba(246,196,0,.18); color:#0f172a; border: 1px solid rgba(246,196,0,.35); }
 
-    main .grid{
-      display:grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap: 18px;
-      margin-top: 18px;
-    }
-    @media (max-width: 980px){
-      main .grid{ grid-template-columns: 1fr; }
-      .brand{ min-width:auto; }
-    }
+    main .grid{ display:grid; grid-template-columns: 1.15fr .85fr; gap:18px; margin-top:18px; }
+    @media (max-width: 980px){ main .grid{ grid-template-columns: 1fr; } .brand{ min-width:auto; } }
 
     .card{
       background: rgba(255,255,255,.85);
@@ -121,16 +92,13 @@
     .card .head h2{ margin:0; font-size: 14px; letter-spacing:.2px; }
     .badge{
       display:inline-flex; align-items:center; gap:8px;
-      font-size: 12px;
-      font-weight: 700;
-      color:#0f172a;
-      padding: 8px 10px;
-      border-radius: 999px;
+      font-size: 12px; font-weight: 700; color:#0f172a;
+      padding: 8px 10px; border-radius: 999px;
       background: rgba(246,196,0,.22);
       border: 1px solid rgba(246,196,0,.40);
       white-space:nowrap;
     }
-    .card .body{ padding: 16px; }
+    .card .body{ padding:16px; }
 
     .form{
       display:grid;
@@ -138,19 +106,10 @@
       gap: 10px;
       align-items:end;
     }
-    @media (max-width: 760px){
-      .form{ grid-template-columns: 1fr 1fr; }
-    }
-    label{
-      font-size: 12px;
-      color: var(--gray);
-      display:block;
-      margin-bottom: 6px;
-      font-weight: 650;
-    }
+    @media (max-width: 760px){ .form{ grid-template-columns: 1fr 1fr; } }
+    label{ font-size:12px; color:var(--gray); display:block; margin-bottom:6px; font-weight:650; }
     input[type="text"], select{
-      width:100%;
-      padding: 12px 12px;
+      width:100%; padding: 12px 12px;
       border-radius: 14px;
       border: 1px solid rgba(100,116,139,.24);
       background: rgba(255,255,255,.92);
@@ -176,11 +135,7 @@
       border: 1px dashed rgba(100,116,139,.20);
     }
 
-    .stats{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
+    .stats{ display:grid; grid-template-columns: 1fr 1fr; gap:10px; }
     .stat{
       border-radius: 16px;
       padding: 12px 12px;
@@ -189,27 +144,17 @@
       display:flex; align-items:center; justify-content:space-between; gap:10px;
     }
     .stat .k{ font-size: 12px; color: var(--gray); font-weight: 700; }
-    .stat .v{
-      font-size: 18px;
-      font-weight: 900;
-      color: #0f172a;
-      display:flex; align-items:baseline; gap:8px;
-    }
+    .stat .v{ font-size: 18px; font-weight: 900; color: #0f172a; display:flex; align-items:baseline; gap:8px; }
     .stat .v small{ font-size: 11px; color: var(--gray); font-weight: 800; }
 
-    .tabs{
-      display:flex; gap:8px; flex-wrap:wrap;
-      margin: 12px 0 6px;
-    }
+    .tabs{ display:flex; gap:8px; flex-wrap:wrap; margin: 12px 0 6px; }
     .tab{
       padding: 9px 10px;
       border-radius: 999px;
       background: rgba(30,90,168,.08);
       border: 1px solid rgba(30,90,168,.18);
-      font-weight: 800;
-      font-size: 12px;
-      cursor:pointer;
-      user-select:none;
+      font-weight: 800; font-size: 12px;
+      cursor:pointer; user-select:none;
     }
     .tab.active{
       background: linear-gradient(135deg, rgba(30,90,168,.95), rgba(43,121,209,.95));
@@ -233,90 +178,41 @@
       align-items:center;
     }
     .row:last-child{ border-bottom:0; }
-    .who{
-      display:flex; flex-direction:column; gap:2px;
-      min-width:0;
-    }
-    .who strong{
-      font-size: 13px;
-      white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
-    }
-    .who span{
-      font-size: 12px;
-      color: var(--gray);
-      white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
-    }
-    .mini{
-      display:flex; gap:8px; align-items:center; justify-content:flex-end;
-    }
+    .who{ display:flex; flex-direction:column; gap:2px; min-width:0; }
+    .who strong{ font-size:13px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .who span{ font-size:12px; color:var(--gray); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .mini{ display:flex; gap:8px; align-items:center; justify-content:flex-end; }
     .chip{
-      font-size: 11px;
-      font-weight: 900;
-      padding: 6px 8px;
-      border-radius: 999px;
+      font-size: 11px; font-weight: 900;
+      padding: 6px 8px; border-radius: 999px;
       background: rgba(246,196,0,.22);
       border: 1px solid rgba(246,196,0,.42);
       white-space:nowrap;
     }
-    .chip.blue{
-      background: rgba(43,121,209,.14);
-      border-color: rgba(43,121,209,.24);
-    }
+    .chip.blue{ background: rgba(43,121,209,.14); border-color: rgba(43,121,209,.24); }
     .iconbtn{
-      width: 34px; height: 34px;
-      border-radius: 12px;
+      width:34px; height:34px;
+      border-radius:12px;
       display:grid; place-items:center;
-      border: 1px solid rgba(100,116,139,.22);
+      border:1px solid rgba(100,116,139,.22);
       background: rgba(255,255,255,.9);
       cursor:pointer;
     }
     .iconbtn:hover{ box-shadow: 0 8px 18px rgba(15,23,42,.10); }
 
     .footer-note{
-      margin-top: 10px;
-      font-size: 12px;
+      margin-top:10px;
+      font-size:12px;
       color: var(--gray);
       display:flex; gap:10px; flex-wrap:wrap;
-      align-items:center;
-      justify-content:space-between;
+      align-items:center; justify-content:space-between;
     }
     .ok{ color:#16a34a; font-weight: 900; }
     .warn{ color:#f59e0b; font-weight: 900; }
     .muted{ color: var(--gray); }
 
-    .art{
-      display:flex;
-      gap: 12px;
-      align-items:center;
-    }
-    .art svg{
-      width: 40px; height: 40px;
-      flex: 0 0 auto;
-      border-radius: 16px;
-      background: rgba(30,90,168,.08);
-      border: 1px solid rgba(30,90,168,.16);
-      padding: 8px;
-    }
-    .art p{
-      margin:0;
-      font-size: 12px;
-      color: var(--gray);
-      line-height:1.4;
-    }
-
-    .divider{
-      height:1px;
-      background: rgba(100,116,139,.14);
-      margin: 14px 0;
-    }
-
-    .smallprint{
-      margin-top: 16px;
-      font-size: 12px;
-      color: rgba(100,116,139,.92);
-    }
-    a{ color: var(--blue); text-decoration:none; font-weight: 800; }
-    a:hover{ text-decoration:underline; }
+    .divider{ height:1px; background: rgba(100,116,139,.14); margin: 14px 0; }
+    .smallprint{ margin-top:16px; font-size:12px; color: rgba(100,116,139,.92); }
   </style>
 </head>
 <body>
@@ -335,48 +231,21 @@
         </div>
         <div class="title">
           <h1>Próbaérettségi – jelentkezések</h1>
-          <p>Nyelv + szint szerinti létszám és névsor, exportálható listákkal</p>
+          <p>Közös rögzítés több gépről (Google Sheets), bontásokkal és exporttal</p>
         </div>
       </div>
 
       <div class="actions">
+        <button class="btn-secondary" id="btnRefresh" title="Újratöltés a közös táblából">
+          Frissítés
+        </button>
+
         <button class="btn-secondary" id="btnExportAll" title="Összes kategória CSV-ben">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M12 3v10" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
-            <path d="M8 10l4 4 4-4" stroke="#0f172a" stroke-width=" hookupesg
-            stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M4 17v3h16v-3" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
-          </svg>
           Export mind (8 CSV)
         </button>
 
-        <button class="btn-soft" id="btnBackup" title="Mentés fájlba (JSON)">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M5 5h12l2 2v14H5V5z" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
-            <path d="M8 5v6h8V5" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
-            <path d="M8 19h8" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-          Biztonsági mentés
-        </button>
-
-        <label class="iconbtn" title="Visszatöltés mentésből (JSON)" style="cursor:pointer;">
-          <input id="fileRestore" type="file" accept="application/json" style="display:none;">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M12 21V11" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
-            <path d="M8 14l4-4 4 4" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M4 7v3h16V7" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-        </label>
-
-        <button class="btn-danger" id="btnClear" title="Minden adat törlése erről a gépről">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M4 7h16" stroke="white" stroke-width="2" stroke-linecap="round"/>
-            <path d="M10 11v7" stroke="white" stroke-width="2" stroke-linecap="round"/>
-            <path d="M14 11v7" stroke="white" stroke-width="2" stroke-linecap="round"/>
-            <path d="M6 7l1 14h10l1-14" stroke="white" stroke-width="2" stroke-linejoin="round"/>
-            <path d="M9 7V4h6v3" stroke="white" stroke-width="2" stroke-linejoin="round"/>
-          </svg>
-          Ürítés
+        <button class="btn-danger" id="btnClearLocal" title="Csak az EGYEDI böngésző gyorsítótárát üríti (a közös táblát NEM)">
+          Helyi ürítés
         </button>
       </div>
     </div>
@@ -394,7 +263,7 @@
         </div>
         <div class="body">
 
-          <div class="form" id="form">
+          <div class="form">
             <div>
               <label for="name">Tanuló neve</label>
               <input id="name" type="text" placeholder="pl. Kiss Anna" autocomplete="off" />
@@ -417,58 +286,27 @@
           </div>
 
           <div class="hint">
-            <span class="pill">💡 Tipp: Enter = gyors hozzáadás (név mezőben)</span>
-            <span class="pill">📥 A jobb oldali bontásból külön-külön is exportálhatsz</span>
-            <span class="pill">🧾 Lista CSV: név; osztály; nyelv; szint</span>
+            <span class="pill">💡 Enter = gyors hozzáadás (név mezőben)</span>
+            <span class="pill">✅ Duplikáció: (név+osztály+nyelv+szint) nem kerülhet be kétszer</span>
+            <span class="pill">🌍 Közös adat: Google Táblából tölt és oda ment</span>
           </div>
 
           <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
-            <button class="btn-primary" id="btnAdd">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M12 5v14" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                <path d="M5 12h14" stroke="white" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-              Hozzáadás
-            </button>
-
-            <button class="btn-secondary" id="btnSort">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M7 6h14" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
-                <path d="M7 12h10" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
-                <path d="M7 18h6" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
-                <path d="M3 6v12" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
-                <path d="M3 18l-2-2" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-              ABC rendezés
-            </button>
-          </div>
-
-          <div class="divider"></div>
-
-          <div class="art">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M7 3h10v18H7V3z" stroke="rgba(30,90,168,.95)" stroke-width="2" stroke-linejoin="round"/>
-              <path d="M9 7h6" stroke="rgba(30,90,168,.95)" stroke-width="2" stroke-linecap="round"/>
-              <path d="M9 11h6" stroke="rgba(30,90,168,.95)" stroke-width="2" stroke-linecap="round"/>
-              <path d="M9 15h4" stroke="rgba(246,196,0,.95)" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-            <p>
-              A rögzített adatokat a böngésző tárolja ezen a gépen.
-              Ha több gépről szeretnétek egyszerre rögzíteni, szólj és adok egy Google Sheets-es (közös) verziót.
-            </p>
+            <button class="btn-primary" id="btnAdd">Hozzáadás</button>
+            <button class="btn-secondary" id="btnSort">ABC rendezés</button>
           </div>
 
           <div class="divider"></div>
 
           <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;">
             <strong style="font-size:13px;">Legutóbbi jelentkezők</strong>
-            <span class="muted" style="font-size:12px;" id="lastSaved">—</span>
+            <span class="muted" style="font-size:12px;" id="lastSync">—</span>
           </div>
 
           <div class="list" id="recentList" aria-live="polite"></div>
 
           <div class="smallprint">
-            Megjegyzés: egy diák több nyelvből és/vagy több szinten is szerepelhet. Duplikációt (ugyanaz: név+osztály+nyelv+szint) nem engedünk.
+            Egy diák több nyelvből és/vagy több szinten is szerepelhet. A közös táblába mentünk.
           </div>
         </div>
       </section>
@@ -481,26 +319,11 @@
         <div class="body">
 
           <div class="stats" id="stats"></div>
-
           <div class="tabs" id="tabs"></div>
 
           <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;">
-            <button class="btn-primary" id="btnExportCurrent">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M12 3v10" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                <path d="M8 10l4 4 4-4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M4 17v3h16v-3" stroke="white" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-              Aktuális kategória CSV
-            </button>
-
-            <button class="btn-secondary" id="btnCopyNames" title="Névsor másolása vágólapra">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M9 9h11v11H9V9z" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
-                <path d="M4 4h11v11" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              Névsor másolása
-            </button>
+            <button class="btn-primary" id="btnExportCurrent">Aktuális kategória CSV</button>
+            <button class="btn-secondary" id="btnCopyNames" title="Névsor másolása vágólapra">Névsor másolása</button>
           </div>
 
           <div class="divider"></div>
@@ -535,7 +358,12 @@
 
 <script>
 (() => {
-  const STORAGE_KEY = "probeerettsegi_reg_v2";
+  // ====== EZT A KÉT SORT TÖLTSD KI ======
+  const API_URL = "https://script.google.com/macros/s/AKfycbxu52_i_kPelHTdudVdO9J3jJQwjQ51exjaPLydLcuXZaoc_Hbd9oUndLnjwX_avbdq/exec";
+  const API_KEY = "SECRET_KEY";
+  // ====================================
+
+  const LOCAL_CACHE_KEY = "probeerettsegi_cache_v1";
 
   const CLASSES = ["12a","12b","12c","11a","11b","11c","10a","10b","10c"];
   const LANGS = ["Angol","Német","Francia","Olasz"];
@@ -557,16 +385,15 @@
 
   const btnAdd = $("btnAdd");
   const btnSort = $("btnSort");
-  const btnClear = $("btnClear");
+  const btnRefresh = $("btnRefresh");
+  const btnClearLocal = $("btnClearLocal");
   const btnExportCurrent = $("btnExportCurrent");
   const btnExportAll = $("btnExportAll");
   const btnCopyNames = $("btnCopyNames");
-  const btnBackup = $("btnBackup");
-  const fileRestore = $("fileRestore");
 
   const totalBadge = $("totalBadge");
   const recentList = $("recentList");
-  const lastSaved = $("lastSaved");
+  const lastSync = $("lastSync");
 
   const stats = $("stats");
   const tabs = $("tabs");
@@ -579,7 +406,7 @@
 
   const statusMsg = $("statusMsg");
 
-  let state = load();
+  let state = loadCache_();
   let currentCategory = "AngolB1";
 
   // init selects
@@ -603,20 +430,21 @@
 
   // events
   btnAdd.addEventListener("click", addEntry);
-
   btnSort.addEventListener("click", () => {
     state.entries.sort((a,b) => normalize(a.name).localeCompare(normalize(b.name), "hu"));
-    save();
+    saveCache_();
     renderAll();
     toast("ABC rendezés kész.", "ok");
   });
-
-  btnClear.addEventListener("click", () => {
-    if (!confirm("Biztosan törlöd az ÖSSZES rögzített jelentkezőt erről a gépről?")) return;
-    state = { entries: [], lastSaved: null };
-    save();
+  btnRefresh.addEventListener("click", async () => {
+    await syncFromServer_(true);
+  });
+  btnClearLocal.addEventListener("click", () => {
+    if (!confirm("Ez csak a helyi gyorsítótárat törli ezen a gépen. A közös (Google) adat NEM törlődik. Biztos?")) return;
+    localStorage.removeItem(LOCAL_CACHE_KEY);
+    state = { entries: [], lastSync: null };
     renderAll();
-    toast("Minden adat törölve.", "warn");
+    toast("Helyi gyorsítótár törölve.", "warn");
   });
 
   btnExportCurrent.addEventListener("click", () => {
@@ -646,42 +474,58 @@
     }
   });
 
-  btnBackup.addEventListener("click", () => {
-    const blob = new Blob([JSON.stringify(state, null, 2)], { type:"application/json;charset=utf-8" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `probeerettsegi-mentes-${new Date().toISOString().slice(0,10)}.json`;
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    URL.revokeObjectURL(url);
-    toast("Mentés letöltve (JSON).", "ok");
-  });
-
-  fileRestore.addEventListener("change", async (e) => {
-    const file = e.target.files?.[0];
-    if(!file) return;
-    try{
-      const txt = await file.text();
-      const data = JSON.parse(txt);
-      if(!data || !Array.isArray(data.entries)) throw new Error("Hibás formátum");
-      state = { entries: data.entries, lastSaved: data.lastSaved ?? null };
-      save();
-      renderAll();
-      toast("Visszatöltés sikeres.", "ok");
-    }catch{
-      toast("Nem sikerült visszatölteni (hibás fájl).", "warn");
-    }finally{
-      fileRestore.value = "";
-    }
-  });
-
   nameEl.addEventListener("keydown", (e) => {
     if (e.key === "Enter") addEntry();
   });
 
-  // --- core logic ---
+  // ====== SERVER API ======
+
+  async function apiList_(){
+    const url = `${API_URL}?action=list&key=${encodeURIComponent(API_KEY || "")}`;
+    const res = await fetch(url, { method:"GET" });
+    const data = await res.json();
+    if(!data.ok) throw new Error(data.error || "API list error");
+    return data.entries || [];
+  }
+
+  async function apiAdd_(entry){
+    const body = new URLSearchParams();
+    body.set("key", API_KEY || "");
+    body.set("id", entry.id);
+    body.set("name", entry.name);
+    body.set("clazz", entry.clazz);
+    body.set("lang", entry.lang);
+    body.set("level", entry.level);
+    body.set("ts", String(entry.ts));
+
+    const res = await fetch(API_URL, {
+      method:"POST",
+      headers: { "Content-Type":"application/x-www-form-urlencoded;charset=UTF-8" },
+      body: body.toString()
+    });
+
+    const data = await res.json();
+    if(!data.ok) throw new Error(data.error || "API add error");
+    return true;
+  }
+
+  async function syncFromServer_(showToast){
+    try{
+      toast("Betöltés a közös táblából…", "muted");
+      const entries = await apiList_();
+      state.entries = entries;
+      state.lastSync = Date.now();
+      saveCache_();
+      renderAll();
+      if(showToast) toast("Frissítve a közös táblából.", "ok");
+    }catch(err){
+      renderAll();
+      toast("Nem sikerült frissíteni. Ellenőrizd az API_URL/API_KEY-t és a jogosultságot.", "warn");
+      console.error(err);
+    }
+  }
+
+  // ====== core logic ======
 
   function addEntry(){
     const name = nameEl.value.trim();
@@ -695,14 +539,13 @@
       return;
     }
 
-    // Duplikációvédelem: ugyanaz a név+osztály+nyelv+szint csak egyszer
+    // kliens oldali gyors duplikáció (a szerver is ellenőrzi)
     const exists = state.entries.some(e =>
       normalize(e.name) === normalize(name) &&
       e.clazz === clazz &&
       e.lang === lang &&
       e.level === level
     );
-
     if(exists){
       toast("Ez a jelentkezés már szerepel (duplikáció).", "warn");
       nameEl.focus();
@@ -718,13 +561,28 @@
       ts: Date.now()
     };
 
-    state.entries.unshift(entry);
-    state.lastSaved = Date.now();
-    save();
-    nameEl.value = "";
-    nameEl.focus();
-    renderAll();
-    toast("Jelentkező rögzítve.", "ok");
+    // mentés szerverre
+    (async () => {
+      try{
+        toast("Mentés a közös táblába…", "muted");
+        await apiAdd_(entry);
+        nameEl.value = "";
+        nameEl.focus();
+
+        // frissítsünk szerverről, hogy több gép esetén is szinkron legyen
+        await syncFromServer_(false);
+        toast("Jelentkező rögzítve.", "ok");
+      }catch(err){
+        if(String(err.message || "").toLowerCase().includes("duplicate")){
+          toast("Ez a jelentkezés már szerepel (duplikáció).", "warn");
+        }else if(String(err.message || "").toLowerCase().includes("unauthorized")){
+          toast("Nincs jogosultság (API_KEY hibás vagy hiányzik).", "warn");
+        }else{
+          toast("Mentési hiba. Ellenőrizd az Apps Script telepítést/jogosultságot.", "warn");
+        }
+        console.error(err);
+      }
+    })();
   }
 
   function filterCategory(lang, level){
@@ -734,7 +592,7 @@
       .sort((a,b) => {
         const n = normalize(a.name).localeCompare(normalize(b.name), "hu");
         if(n !== 0) return n;
-        return a.clazz.localeCompare(b.clazz, "hu");
+        return String(a.clazz).localeCompare(String(b.clazz), "hu");
       });
   }
 
@@ -749,13 +607,11 @@
   }
 
   function buildStudentKey(e){
-    // Név + osztály alapján csoportosítunk
     return `${normalize(e.name)}|${e.clazz}`;
   }
 
   function multiApplicants(){
     const map = new Map();
-
     state.entries.forEach(e => {
       const k = buildStudentKey(e);
       if(!map.has(k)){
@@ -764,24 +620,18 @@
       map.get(k).cats.add(`${e.lang}${e.level}`);
     });
 
-    const arr = [...map.values()]
+    return [...map.values()]
       .filter(x => x.cats.size >= 2)
-      .map(x => ({
-        name: x.name,
-        clazz: x.clazz,
-        cats: [...x.cats].sort((a,b) => a.localeCompare(b, "hu"))
-      }))
+      .map(x => ({ name:x.name, clazz:x.clazz, cats:[...x.cats].sort((a,b)=>a.localeCompare(b,"hu")) }))
       .sort((a,b) => normalize(a.name).localeCompare(normalize(b.name), "hu"));
-
-    return arr;
   }
 
-  // --- rendering ---
+  // ====== rendering ======
 
   function renderAll(){
     totalBadge.textContent = `Összesen: ${state.entries.length} fő`;
-    lastSaved.textContent = state.lastSaved
-      ? `Utolsó mentés: ${new Date(state.lastSaved).toLocaleString("hu-HU")}`
+    lastSync.textContent = state.lastSync
+      ? `Utolsó frissítés: ${new Date(state.lastSync).toLocaleString("hu-HU")}`
       : "—";
 
     renderRecent();
@@ -798,10 +648,7 @@
           <div class="v">${c[key]} <small>fő</small></div>
         </div>
         <button class="btn-secondary" style="padding:8px 10px; border-radius:12px; box-shadow:none;"
-          title="Letöltés CSV"
-          data-export="${key}">
-          CSV
-        </button>
+          data-export="${key}">CSV</button>
       `;
       box.querySelector("[data-export]").addEventListener("click", (ev) => {
         const cat = ev.currentTarget.dataset.export;
@@ -818,13 +665,11 @@
     const rows = filterCategory(L,S);
     currentTitle.textContent = `${currentCategory} – névsor`;
     currentCount.textContent = `${rows.length} fő`;
-    renderList(currentList, rows, true);
+    renderList(currentList, rows, false);
 
-    // Több jelentkezéses diákok
     const multis = multiApplicants();
     multiCount.textContent = `${multis.length} fő`;
     multiList.innerHTML = "";
-
     if(multis.length === 0){
       multiList.innerHTML = `<div class="row"><div class="who"><strong>Nincs ilyen diák.</strong><span>Még senki nem szerepel 2 vagy több kategóriában.</span></div></div>`;
     } else {
@@ -836,19 +681,19 @@
             <strong title="${escapeHtml(m.name)}">${escapeHtml(m.name)}</strong>
             <span>${escapeHtml(m.clazz)} · ${escapeHtml(m.cats.join(", "))}</span>
           </div>
-          <div class="mini">
-            <span class="chip blue">${m.cats.length} kategória</span>
-          </div>
+          <div class="mini"><span class="chip blue">${m.cats.length} kategória</span></div>
         `;
         multiList.appendChild(row);
       });
     }
-
-    statusMsg.textContent = "Készen áll.";
   }
 
   function renderRecent(){
-    const recent = state.entries.slice(0, 10);
+    const recent = state.entries
+      .slice()
+      .sort((a,b) => (b.ts||0) - (a.ts||0))
+      .slice(0, 10);
+
     if(recent.length === 0){
       recentList.innerHTML = `<div class="row"><div class="who"><strong>Nincs még rögzített jelentkező.</strong><span>Rögzítéshez töltsd ki a mezőket és kattints a Hozzáadás gombra.</span></div></div>`;
       return;
@@ -856,7 +701,7 @@
     renderList(recentList, recent, false);
   }
 
-  function renderList(container, rows, showDelete){
+  function renderList(container, rows){
     container.innerHTML = "";
     if(rows.length === 0){
       container.innerHTML = `<div class="row"><div class="who"><strong>Üres lista</strong><span>Még nincs jelentkező ebben a kategóriában.</span></div></div>`;
@@ -873,34 +718,13 @@
         <div class="mini">
           <span class="chip">${escapeHtml(r.clazz)}</span>
           <span class="chip blue">${escapeHtml(r.lang)}${escapeHtml(r.level)}</span>
-          ${showDelete ? `
-            <div class="iconbtn" title="Törlés" data-del="${r.id}">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M4 7h16" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
-                <path d="M10 11v7" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
-                <path d="M14 11v7" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
-                <path d="M6 7l1 14h10l1-14" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
-              </svg>
-            </div>
-          ` : ""}
         </div>
       `;
-      if(showDelete){
-        row.querySelector("[data-del]").addEventListener("click", (ev) => {
-          const id = ev.currentTarget.dataset.del;
-          state.entries = state.entries.filter(e => e.id !== id);
-          state.lastSaved = Date.now();
-          save();
-          renderAll();
-          toast("Törölve.", "warn");
-        });
-      }
       container.appendChild(row);
     });
   }
 
-  // --- export helpers ---
-
+  // ====== export ======
   function downloadCSV(filename, rows){
     const header = ["Név","Osztály","Nyelv","Szint"];
     const data = rows.map(r => [r.name, r.clazz, r.lang, r.level]);
@@ -918,25 +742,19 @@
     a.remove();
     URL.revokeObjectURL(url);
   }
-
   function csvEscape(v){
     const s = String(v ?? "");
     if (/[;"\n\r]/.test(s)) return `"${s.replace(/"/g,'""')}"`;
     return s;
   }
 
-  // --- misc helpers ---
-
+  // ====== misc ======
   function splitCategory(cat){
     const level = cat.endsWith("B2") ? "B2" : "B1";
     const lang = cat.slice(0, cat.length - 2);
     return [lang, level];
   }
-
-  function normalize(s){
-    return String(s ?? "").trim().toLowerCase();
-  }
-
+  function normalize(s){ return String(s ?? "").trim().toLowerCase(); }
   function toast(msg, type){
     statusMsg.textContent = msg;
     statusMsg.className = type === "ok" ? "ok" : (type === "warn" ? "warn" : "muted");
@@ -946,32 +764,34 @@
       statusMsg.className = "muted";
     }, 2800);
   }
-
-  function save(){
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-  }
-
-  function load(){
-    try{
-      const raw = localStorage.getItem(STORAGE_KEY);
-      if(!raw) return { entries: [], lastSaved: null };
-      const parsed = JSON.parse(raw);
-      if(!parsed || !Array.isArray(parsed.entries)) return { entries: [], lastSaved: null };
-      return { entries: parsed.entries, lastSaved: parsed.lastSaved ?? null };
-    }catch{
-      return { entries: [], lastSaved: null };
-    }
-  }
-
   function escapeHtml(str){
     return String(str).replace(/[&<>"']/g, (m) => ({
       "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
     }[m]));
   }
 
-  // initial render
-  renderAll();
+  function saveCache_(){
+    localStorage.setItem(LOCAL_CACHE_KEY, JSON.stringify(state));
+  }
+  function loadCache_(){
+    try{
+      const raw = localStorage.getItem(LOCAL_CACHE_KEY);
+      if(!raw) return { entries: [], lastSync: null };
+      const parsed = JSON.parse(raw);
+      if(!parsed || !Array.isArray(parsed.entries)) return { entries: [], lastSync: null };
+      return { entries: parsed.entries, lastSync: parsed.lastSync ?? null };
+    }catch{
+      return { entries: [], lastSync: null };
+    }
+  }
+
+  // ====== start ======
+  renderAll();               // azonnal mutatja a cache-t, ha van
   nameEl.focus();
+  syncFromServer_(false);    // betöltés a közös táblából
+
+  // automatikus frissítés 30 mp-enként
+  setInterval(() => syncFromServer_(false), 30000);
 })();
 </script>
 </body>
